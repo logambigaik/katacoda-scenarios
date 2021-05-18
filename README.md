@@ -91,3 +91,14 @@ sudo systemctl enable --now kubelet
 ![image](https://user-images.githubusercontent.com/54719289/118702539-f71e2b80-b80c-11eb-975e-62766eb86125.png)
 
 
+# export:
+
+``` kubectl get deployments nginx --export -o yaml  
+    kubectl get deployments nginx --export -o json
+```
+![image](https://user-images.githubusercontent.com/54719289/118703349-e7ebad80-b80d-11eb-9896-5fa9dfc4937b.png)
+
+
+
+
+
