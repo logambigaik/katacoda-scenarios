@@ -41,3 +41,13 @@ For examples, visit https://github.com/katacoda/scenario-example
 ```
 ![image](https://user-images.githubusercontent.com/54719289/118694473-02208e00-b804-11eb-90d0-d5af7093f061.png)
 
+# adhoc command to check images
+```
+  kubectl run web --image=loodse/demo-www
+  kubectl expose deployment web --port 80 --type NodePort
+```
+
+![image](https://user-images.githubusercontent.com/54719289/118696630-66dce800-b806-11eb-834a-c134c1083f8e.png)
+
+![image](https://user-images.githubusercontent.com/54719289/118696676-73f9d700-b806-11eb-9345-7a97e4e84dcb.png)
+
