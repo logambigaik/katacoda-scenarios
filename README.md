@@ -82,3 +82,10 @@ sudo systemctl enable --now kubelet
 
 ![image](https://user-images.githubusercontent.com/54719289/118697522-48c3b780-b807-11eb-9189-595b044d2396.png)
 
+
+
+# Adhhoc command to create deploy.yaml
+
+''' kubectl create deployment two --image=nginx --dry-run -o yaml  '''
+
+
