@@ -88,4 +88,6 @@ sudo systemctl enable --now kubelet
 
 ''' kubectl create deployment two --image=nginx --dry-run -o yaml  '''
 
+![image](https://user-images.githubusercontent.com/54719289/118702539-f71e2b80-b80c-11eb-975e-62766eb86125.png)
+
 
