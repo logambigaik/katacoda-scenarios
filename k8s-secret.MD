@@ -52,3 +52,25 @@ spec:
         add: ["SYS_TIME"]
             
  ```
+# Serviceccounts:
+
+![image](https://user-images.githubusercontent.com/54719289/119392380-976dc780-bcc7-11eb-8adf-f1c692879d1d.png)
+
+```
+kubectl get serviceaccounts
+
+controlplane $ kubectl get serviceaccounts
+NAME      SECRETS   AGE
+default   1         36m
+
+controlplane $ kubectl describe serviceaccounts default
+Name:                default
+Namespace:           default
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  <none>
+Mountable secrets:   default-token-pxcq5
+Tokens:              default-token-pxcq5
+Events:              <none>
+
+```
