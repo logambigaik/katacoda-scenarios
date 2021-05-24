@@ -33,20 +33,21 @@
    
    ubuntu-sleeper.yaml
    
-   apiVersion: v1
-   kind: Pod
-   metadata:
-      name: ubuntu-sleeper
-      namespace: default
-   spec:
-      containers:
-         - command:
-            - sleep
-            - "4800"
-           image: ubuntu
-           name: ubuntu-sleeper
-           securityContext:
-             capabilities:
-               add: ["SYS_TIME"]
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-sleeper
+  namespace: default
+spec:
+  containers:
+  - command:
+    - sleep
+    - "4800"
+    image: ubuntu
+    name: ubuntu-sleeper
+    securityContext:
+     
+      capabilities:
+        add: ["SYS_TIME"]
             
  ```
