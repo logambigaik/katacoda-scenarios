@@ -1,0 +1,20 @@
+# Secret:
+
+```
+   kubectl create secret generic db-secret \
+           --from-literal=DB_Host=sql01 \
+           --from-literal=DB_User=root \
+           --from-literal=DB_Password=password123 \ 
+           --dry-run=client -o yaml > db-secret.yaml
+           
+  apiVersion: v1
+  data:
+    DB_Host: c3FsMDE=
+    DB_Password: cGFzc3dvcmQxMjM=
+    DB_User: cm9vdA==
+  kind: Secret
+  metadata:
+    creationTimestamp: null
+    name: db-secret
+    
+ ```
