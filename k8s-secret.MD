@@ -45,8 +45,8 @@
             - "4800"
            image: ubuntu
            name: ubuntu-sleeper
-      securityContext:
-           capabilities:
-            add: ["SYS_TIME"]
+           securityContext:
+             capabilities:
+               add: ["SYS_TIME"]
             
  ```
